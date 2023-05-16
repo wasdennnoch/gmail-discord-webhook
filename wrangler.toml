@@ -1,0 +1,12 @@
+name = "gmail-notifications-worker"
+main = "src/index.ts"
+compatibility_date = "2023-05-06"
+
+workers_dev = true
+
+kv_namespaces = [
+    { binding = "KV_USER_SETTINGS", id = "TODO", preview_id = "f4b8650ed45247d8b372cca85e48726c" }
+]
+
+[triggers]
+crons = [ "1 * * * *" ]
